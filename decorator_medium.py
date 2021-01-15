@@ -18,7 +18,9 @@ class Timer:
             return return_value
         return wrap
 
-@Timer(num_runs=10)
+
+my_timer = Timer(10)
+@my_timer
 def fibo(arg):
     """Функция вычисления суммы чётных элементов 
     последовательности Фибоначчи от 1 до args"""
